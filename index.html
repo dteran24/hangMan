@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+1+Code&family=Oswald&display=swap" rel="stylesheet">
+    <title>hangmanGame</title>
+</head>
+<header>Hangman</header>
+<body>
+    <div class="container">
+        <svg height = "250" width = "200" class ="figureContainer">
+        <line x1= "60" y1="20" x2="140" y2="20"/>
+        <line x1= "140" y1= "20" x2 = "140" y2="50"/>
+        <line x1= "60" y1= "20" x2= " 60" y2="230"/>
+        <line x1= "10" y1= "230" x2= " 120" y2="230"/>
+        
+        <circle cx ="140" cy = "65" r ="15"class = "figurePart"/>
+        <line x1= "140" y1= "80" x2= "140" y2="140" class = "figurePart"/>
+        <line x1= "140" y1= "90" x2= "180" y2="110"class = "figurePart"/>
+        <line x1= "140" y1= "90" x2= "100" y2="110"class = "figurePart"/>
+        <line x1= "140" y1= "140" x2= "100" y2="170"class = "figurePart"/>
+        <line x1= "140" y1= "140" x2= "180" y2="170"class = "figurePart"/>
+        </svg>
+        <div class = "wrongLettersContainer">Wrong Guesses: <span id = "mistakes">0</span> of <span id ="maxWrong"></span></div>
+            <p id = "subject"></p>
+            <p id = "wordSpotlight">Guess the word here!</p>
+        <div id = "keyboard"></div>
+        <button class= "bttnRestart" onclick="reset()">Reset</button>
+    </div>
+        
+<footer>
+    <script src = "script.js"> </script>
+</footer>
+</html>
