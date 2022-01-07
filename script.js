@@ -86,6 +86,7 @@ function reset(){
     guessedWord();
     updateMistakes();
     subjectNotify();
+    updateStickMan();
 
 }
 
